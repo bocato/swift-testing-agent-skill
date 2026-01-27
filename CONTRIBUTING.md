@@ -9,6 +9,7 @@ Agent Skills are modular capabilities that extend AI agents' functionality. They
 **Learn more:**
 - [Agent Skills Overview](https://agentskills.io/home) - Understanding the format
 - [Anthropic's Agent Skills Documentation](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) - Official specification and best practices
+- [GitHub Copilot Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) - Copilot-specific guidance
 
 ## Why This Matters
 
@@ -28,7 +29,7 @@ The best way to contribute is to use Claude with the [skill-creator skill](https
 
 **How to use it:**
 
-1. **Install the skill-creator skill** in your Claude-compatible tool (Claude.ai, Cursor, etc.)
+1. **Install the skill-creator skill** in your AI tool (Claude.ai, VS Code with Copilot, Cursor, etc.)
    ```bash
    # If using skills.sh
    npx skills add https://github.com/anthropics/skills --skill skill-creator
@@ -179,6 +180,7 @@ To test your changes locally:
 - [Agent Skills Home](https://agentskills.io/home) - Format overview
 - [Anthropic's Agent Skills Guide](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) - Official documentation
 - [Agent Skills Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) - Writing effective skills
+- [GitHub Copilot Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) - Copilot documentation
 - [skill-creator skill](https://github.com/anthropics/skills/tree/main/skills/skill-creator) - AI-assisted skill authoring
 
 ### Swift Testing Resources

@@ -21,7 +21,56 @@ npx skills add https://github.com/bocato/swift-testing-agent-skill --skill swift
 Then use the skill in your AI agent, for example:
 > Use the swift testing skill and help me write tests for the UserService class
 
-### Option B: Claude Code Plugin
+### Option B: GitHub Copilot
+
+GitHub Copilot supports Agent Skills in VS Code, VS Code Insiders, and Copilot CLI.
+
+#### Project Skills (Recommended)
+
+Copy the `swift-testing/` folder to your repository's `.github/skills/` directory:
+
+```bash
+# Clone this repo and copy the skill
+git clone https://github.com/bocato/swift-testing-agent-skill.git
+cp -r swift-testing-agent-skill/swift-testing .github/skills/
+```
+
+Your project structure should look like:
+```
+your-project/
+├── .github/
+│   └── skills/
+│       └── swift-testing/
+│           ├── SKILL.md
+│           └── references/
+│               └── ...
+└── ...
+```
+
+#### Personal Skills
+
+For personal use across all projects, copy to your home directory:
+
+```bash
+# Create personal skills directory if it doesn't exist
+mkdir -p ~/.copilot/skills
+
+# Copy the skill
+cp -r swift-testing-agent-skill/swift-testing ~/.copilot/skills/
+```
+
+#### VS Code Configuration
+
+Ensure Agent Skills are enabled in VS Code settings:
+```json
+{
+  "chat.useAgentSkills": true
+}
+```
+
+Copilot will automatically discover and load the skill when relevant to your testing tasks.
+
+### Option C: Claude Code Plugin
 
 #### Personal Usage
 
@@ -59,7 +108,7 @@ To automatically provide this Skill to everyone working in a repository, configu
 
 When team members open the project, Claude Code will prompt them to install the Skill.
 
-### Option C: Manual install
+### Option D: Manual install
 1) **Clone** this repository.
 2) **Install or symlink** the `swift-testing/` folder following your tool's official skills installation docs (see links below).
 3) **Use your AI tool** as usual and ask it to use the "swift-testing" skill for testing tasks.
@@ -67,6 +116,7 @@ When team members open the project, Claude Code will prompt them to install the 
 #### Where to Save Skills
 
 Follow your tool's official documentation, here are a few popular ones:
+- **GitHub Copilot:** [About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) - Use `.github/skills/` (project) or `~/.copilot/skills/` (personal)
 - **Codex:** [Where to save skills](https://developers.openai.com/codex/skills/#where-to-save-skills)
 - **Claude:** [Using Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview#using-skills)
 - **Cursor:** [Enabling Skills](https://cursor.com/docs/context/skills#enabling-skills)
