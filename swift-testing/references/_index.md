@@ -19,6 +19,7 @@ Quick navigation for Swift Testing topics.
 | `fixtures.md` | Fixture patterns, placement, and best practices |
 | `integration-testing.md` | Module interaction testing patterns |
 | `snapshot-testing.md` | UI regression testing with SnapshotTesting |
+| `dump-snapshot-testing.md` | Text-based snapshot testing for data structures |
 
 ## Quick Links by Problem
 
@@ -32,6 +33,7 @@ Quick navigation for Swift Testing topics.
 - **Create test data** -> `fixtures.md`
 - **Test module interactions** -> `integration-testing.md`
 - **Test UI for regressions** -> `snapshot-testing.md`
+- **Snapshot data structures** -> `dump-snapshot-testing.md`
 
 ### "I'm having issues with..."
 
@@ -60,3 +62,4 @@ Quick navigation for Swift Testing topics.
 | `fixtures.md` | ~140 lines | Placement, patterns, date handling |
 | `integration-testing.md` | ~160 lines | In-memory implementations, workflows |
 | `snapshot-testing.md` | ~180 lines | SnapshotTesting setup, devices, modes |
+| `dump-snapshot-testing.md` | ~200 lines | Text snapshots, deterministic values, customDump |
