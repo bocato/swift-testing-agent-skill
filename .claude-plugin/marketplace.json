@@ -1,0 +1,59 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "swift-testing-agent-skill",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Eduardo Bocato",
+    "email": "contact@bocato.dev"
+  },
+  "metadata": {
+    "description": "Expert guidance on Swift Testing: @Test, #expect, #require, test doubles, fixtures, and XCTest migration patterns."
+  },
+  "plugins": [
+    {
+      "name": "swift-testing",
+      "description": "Expert guidance on Swift Testing best practices, patterns, and implementation. Covers @Test, #expect, #require, @Suite, test doubles (mocks, stubs, spies), fixtures, integration testing, snapshot testing, and XCTest migration strategies.",
+      "repository": "https://github.com/bocato/swift-testing-agent-skill",
+      "version": "1.0.0",
+      "author": {
+        "name": "Eduardo Bocato",
+        "email": "contact@bocato.dev"
+      },
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "swift",
+        "testing",
+        "swift-testing",
+        "xctest",
+        "unit-test",
+        "integration-test",
+        "snapshot-test",
+        "test-doubles",
+        "mocks",
+        "stubs",
+        "spies",
+        "fixtures",
+        "tdd",
+        "ios",
+        "macos",
+        "apple"
+      ],
+      "tags": [
+        "swift",
+        "testing",
+        "swift-testing",
+        "xctest",
+        "test-doubles",
+        "fixtures",
+        "tdd",
+        "apple-platforms"
+      ],
+      "source": "./",
+      "skills": [
+        "./swift-testing"
+      ],
+      "strict": false
+    }
+  ]
+}
