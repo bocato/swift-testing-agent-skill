@@ -40,7 +40,10 @@ When a developer needs testing guidance, follow this decision tree:
 5. **Testing UI for regressions?**
    - Read `references/snapshot-testing.md` for snapshot testing setup
 
-6. **Migrating from XCTest?**
+6. **Testing data structures or state?**
+   - Read `references/dump-snapshot-testing.md` for text-based snapshot testing
+
+7. **Migrating from XCTest?**
    - Read `references/migration-xctest.md` for migration guide
 
 ## Triage-First Playbook (Common Errors -> Next Best Move)
@@ -266,6 +269,7 @@ Load these files as needed for specific topics:
 - **`fixtures.md`** - Fixture patterns, placement, and best practices
 - **`integration-testing.md`** - Module interaction testing patterns
 - **`snapshot-testing.md`** - UI regression testing with SnapshotTesting library
+- **`dump-snapshot-testing.md`** - Text-based snapshot testing for data structures
 
 ## Best Practices Summary
 
