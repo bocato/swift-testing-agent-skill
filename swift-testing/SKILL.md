@@ -96,15 +96,15 @@ Structure every test with clear phases:
 
 ```swift
 @Test func calculateTotal() {
-    // Arrange
+    // Given
     let cart = ShoppingCart()
     cart.add(Item(price: 10))
     cart.add(Item(price: 20))
 
-    // Act
+    // When
     let total = cart.calculateTotal()
 
-    // Assert
+    // Then
     #expect(total == 30)
 }
 ```
@@ -289,6 +289,3 @@ Load these files as needed for specific topics:
 - Tests are isolated (no shared state)
 - Tests are repeatable (no flaky date/time dependencies)
 
----
-
-**Note**: This skill is based on the Swift Testing guide from [Eduardo Bocato's AI Dotfiles](https://github.com/bocato/ai-dotfiles), adapted for the Agent Skills format.

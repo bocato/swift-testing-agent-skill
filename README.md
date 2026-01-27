@@ -2,8 +2,6 @@
 
 Expert guidance for any AI coding tool that supports the [Agent Skills open format](https://agentskills.io/home) — Swift Testing framework, test doubles, fixtures, and testing best practices.
 
-Based on the comprehensive testing guide from [Eduardo Bocato's AI Dotfiles](https://github.com/bocato/ai-dotfiles), distilled into actionable, concise references for agents.
-
 ## Who this is for
 - Teams adopting Swift Testing framework who need modern testing patterns.
 - Developers writing unit tests, integration tests, or snapshot tests.
@@ -205,14 +203,14 @@ func createUser() {
 ### Arrange-Act-Assert
 ```swift
 @Test func calculateTotal() {
-    // Arrange
+    // Given
     let cart = ShoppingCart()
     cart.add(Item(price: 10))
 
-    // Act
+    // When
     let total = cart.calculateTotal()
 
-    // Assert
+    // Then
     #expect(total == 10)
 }
 ```
@@ -268,10 +266,6 @@ Contributions are welcome! This repository follows the [Agent Skills open format
 - Pull request process
 
 This skill is maintained to reflect the latest Swift Testing best practices and will be updated as the framework evolves.
-
-## About the Author
-
-Based on the Swift Testing guide from [Eduardo Bocato's AI Dotfiles](https://github.com/bocato/ai-dotfiles). Eduardo is a software engineer focused on iOS development and testing best practices.
 
 ## License
 
