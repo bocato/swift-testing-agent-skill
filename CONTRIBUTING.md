@@ -29,7 +29,7 @@ The best way to contribute is to use Claude with the [skill-creator skill](https
 
 **How to use it:**
 
-1. **Install the skill-creator skill** in your AI tool (Claude.ai, VS Code with Copilot, Cursor, etc.)
+1. **Install the skill-creator skill** in your AI tool (Claude.ai, VS Code with Copilot, Cursor, Gemini CLI, etc.)
    ```bash
    # If using skills.sh
    npx skills add https://github.com/anthropics/skills --skill skill-creator
@@ -181,6 +181,7 @@ To test your changes locally:
 - [Anthropic's Agent Skills Guide](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) - Official documentation
 - [Agent Skills Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) - Writing effective skills
 - [GitHub Copilot Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) - Copilot documentation
+- [Gemini CLI Documentation](https://github.com/google-gemini/gemini-cli) - Gemini CLI guide
 - [skill-creator skill](https://github.com/anthropics/skills/tree/main/skills/skill-creator) - AI-assisted skill authoring
 
 ### Swift Testing Resources

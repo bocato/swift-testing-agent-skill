@@ -106,7 +106,50 @@ To automatically provide this Skill to everyone working in a repository, configu
 
 When team members open the project, Claude Code will prompt them to install the Skill.
 
-### Option D: Manual install
+### Option D: Gemini CLI
+
+Gemini CLI supports custom instructions through `GEMINI.md` files or the `.gemini/` directory.
+
+#### Project Instructions (Recommended)
+
+Copy the skill content to your project's `.gemini/` directory:
+
+```bash
+# Clone this repo
+git clone https://github.com/bocato/swift-testing-agent-skill.git
+
+# Create .gemini directory and copy the skill
+mkdir -p .gemini/skills
+cp -r swift-testing-agent-skill/swift-testing .gemini/skills/
+```
+
+Your project structure should look like:
+```
+your-project/
+├── .gemini/
+│   └── skills/
+│       └── swift-testing/
+│           ├── SKILL.md
+│           └── references/
+│               └── ...
+└── ...
+```
+
+#### Personal Instructions
+
+For personal use across all projects, copy to your home directory:
+
+```bash
+# Create personal Gemini skills directory
+mkdir -p ~/.gemini/skills
+
+# Copy the skill
+cp -r swift-testing-agent-skill/swift-testing ~/.gemini/skills/
+```
+
+Gemini CLI will automatically discover skills in these locations when relevant to your testing tasks.
+
+### Option E: Manual install
 1) **Clone** this repository.
 2) **Install or symlink** the `swift-testing/` folder following your tool's official skills installation docs (see links below).
 3) **Use your AI tool** as usual and ask it to use the "swift-testing" skill for testing tasks.
@@ -114,6 +157,7 @@ When team members open the project, Claude Code will prompt them to install the 
 #### Where to Save Skills
 
 Follow your tool's official documentation, here are a few popular ones:
+- **Gemini CLI:** Use `.gemini/skills/` (project) or `~/.gemini/skills/` (personal)
 - **GitHub Copilot:** [About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) - Use `.github/skills/` (project) or `~/.copilot/skills/` (personal)
 - **Codex:** [Where to save skills](https://developers.openai.com/codex/skills/#where-to-save-skills)
 - **Claude:** [Using Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview#using-skills)
